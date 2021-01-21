@@ -292,8 +292,8 @@ def encoding_sentence(english_sentence):
     temp=english_sentence.split()
     for i in temp:
         for j in i:
-            result+=" "+encoding_character(j)
-        result+="  "
+            result+=encoding_character(j)+" "
+        result+=" "
     ans=result.strip()
     return result
     # ==================================
