@@ -95,7 +95,7 @@ def is_validated_english_sentence(user_input):
             return False
         if ord(i)==45 or ord(i)==47 or(ord(i)>=58 and ord(i)<=62):
             return False
-        if ord(i)==63 or ord(i)==21 or ord(i)==44 or ord(i)==46:
+        if ord(i)==63 or ord(i)==21 or ord(i)==44 or ord(i)==46 or i==' ':
             cnt+=1
     if cnt==len(user_input):
         return False
